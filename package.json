@@ -1,0 +1,19 @@
+{
+  "name": "projectVueNuxt",
+  "version": "1.0.0",
+  "description": "My primo Nuxt.js project",
+  "author": "chenyh1994",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.9.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^2.0.0"
+  }
+}

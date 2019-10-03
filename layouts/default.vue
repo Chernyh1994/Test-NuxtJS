@@ -41,9 +41,12 @@
       </v-btn>
  
       <v-toolbar-title class="white--text headline" v-text="title" />
+      
+      <a @click.prevent="inspire" href="#">test admin</a>
+
       <v-spacer />
       
-      <nuxt-link to="/authorization">
+      <nuxt-link to="/login">
         <v-avatar color="#26C4DA">
           <span class="white--text headline">CJ</span>
         </v-avatar>
@@ -57,17 +60,24 @@
       </v-container>
     </v-content>
 
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; JSN</span>
-    </v-footer>
+    <Footer/>
+
   </v-app>
 </template>
 
 <script>
+import Footer from '@/components/Footer'
 export default {
+  components: {
+    Footer
+  },
+
+
+  methods: {
+    inspire() {
+    }
+  },
+
   data () {
     return {
       clipped: true,
@@ -75,14 +85,15 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          icon: 'mdi-twitter-circle mdi-light',
+          title: 'All Twitter',
+          to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-account-key mdi-light',
           title: 'Inspire',
-          to: '/inspire'
+          to: '/inspire',
+          emit: console.log('dddddddddd')
         }
       ],
       miniVariant: true,
@@ -93,3 +104,7 @@ export default {
   }
 }
 </script>
+
+<style> 
+  
+</style>

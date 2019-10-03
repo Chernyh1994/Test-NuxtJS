@@ -6,8 +6,8 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'JSN (NuxtJS)',
+    title: 'Test',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +20,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#26c6da' },
   /*
   ** Global CSS
   */
@@ -53,7 +53,7 @@ export default {
       options: {customProperties: true},
       themes: {
           light: {
-              primary: '#3E97A3',
+              primary: '#00838F',
               secondary: colors.amber.darken3,
               accent: colors.grey.darken3,
               info: colors.teal.lighten1,

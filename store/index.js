@@ -1,15 +1,29 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-// import USersTwit from './modules/usersTwit'
-
-Vue.use(Vuex)
-
 export const state = () => ({
-    counter: 0
+    token: null
 })
-  
+
 export const mutations = {
-    increment (state) {
-        state.counter++
+    setToken( state, token) { 
+        state.token = token
+    },
+    clearToken(state) {
+        state.token = null
     }
+}
+
+export const action = {
+    login({commit}) {
+        commit('setToken', 'truetoken')
+    },
+    // password({commit}) {
+    //     commit('setToken', 'truetoken')
+    // },
+    inspire({commit}) {
+        commit('clearToken')
+    }
+    
+}
+
+export const getters = {
+    hasToken: s => !!s.token
 }

@@ -41,6 +41,9 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-gmaps', {
+      key: ''
+    }]
   ],
   /*
   ** vuetify module configuration

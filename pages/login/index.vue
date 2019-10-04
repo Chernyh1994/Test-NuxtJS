@@ -56,7 +56,7 @@
           Cancel
       </v-btn> 
     </v-card-actions>
-    <v-card-text>New to Test(JSN)? <nuxt-link to='/registration'> Create an account.</nuxt-link>or</v-card-text>
+    <v-card-text>New to Test(JSN)? <NuxtLink to='/login/registration'> Create an account.</NuxtLink>or</v-card-text>
   </v-form>
   </v-card>
 </template>
@@ -64,7 +64,7 @@
 
 <script>
 export default {
-  layout: 'authorization',
+  layout: 'login',
   data: () => ({
     valid: false,
     username: '',

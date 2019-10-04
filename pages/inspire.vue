@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-container>
         <span class="mdi"> Ups, Sorry but we are doing technical work </span>
         <span class="mdi mdi-worker"></span>
         <br/>
@@ -10,7 +10,7 @@
             >
             Go Home
         </v-btn>
-    </div>
+    </v-container>
 </template>
 
 <script>

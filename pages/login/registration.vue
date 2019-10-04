@@ -50,7 +50,7 @@
 
 <script>
 export default {
-    layout: 'authorization',
+  layout: 'login',
     data: () => ({
         show1: false,
         password: '',

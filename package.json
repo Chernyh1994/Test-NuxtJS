@@ -11,9 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.9.2"
+    "nuxt": "^2.9.2",
+    "nuxt-gmaps": "^1.0.4"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^2.0.0"
+    "@nuxtjs/vuetify": "^1.9.0"
   }
 }

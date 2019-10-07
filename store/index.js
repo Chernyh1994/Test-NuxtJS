@@ -1,32 +1,29 @@
-new Vuex.Store({
-    state: () => ({
-      counter: 0
-    }),
-    mutations: {
-      increment (state) {
-        state.counter++
-      }
+export const state = () => ({
+    token: null
+})
+
+export const mutations = {
+    setToken( state, token) { 
+        state.token = token
     },
-    modules: {
-      twits: {
-        namespaced: true,
-        state: () => ({
-          list: []
-        }),
-        mutations: {
-          add (state, { text }) {
-            state.list.push({
-              text,
-              done: false
-            })
-          },
-          remove (state, { twit }) {
-            state.list.splice(state.list.indexOf(twit), 1)
-          },
-          toggle (state, { twit }) {
-            twit.done = !twit.done
-          }
-        }
-      }
+    clearToken(state) {
+        state.token = null
     }
-  })
+}
+
+export const action = {
+    login({commit}) {
+        commit('setToken', 'truetoken')
+    },
+    // password({commit}) {
+    //     commit('setToken', 'truetoken')
+    // },
+    inspire({commit}) {
+        commit('clearToken')
+    }
+    
+}
+
+export const getters = {
+    hasToken: s => !!s.token
+}
